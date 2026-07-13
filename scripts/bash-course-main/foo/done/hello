@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [[ -n $1 ]]; then # Check if the first command-line argument is not empty. If it is not empty, assign it to the variable name.
+	name=$1 #
+else
+	read -p 'Enter your name: ' name
+fi
+
+echo "hello $name"

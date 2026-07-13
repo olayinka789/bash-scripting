@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+array=(
+	foo
+	bar
+	baz
+	'hello world'
+)
+
+IFS=,
+echo "array is: ${!array[*]}" #  expands to the indices of the array, which are 0, 1, 2, and 3.
