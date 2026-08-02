@@ -5,7 +5,7 @@
 echo "Welcome to bash script."
 echo
 
-#checking systemt uptime
+#checking system uptime
 echo "#####################################"
 echo "The uptime of the system is: "
 uptime

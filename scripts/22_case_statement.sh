@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
-#echo -e "Enter your name: "
+#echo -e "Enter your name: " # -e allows the interpretation of backslash escapes
 #read  name
-read -p "Username: "  name
 
-case $name in #case statement is used to execute a block of code based on the value of a variable
+#case statement is used to execute a block of code based on the value of a variable
+
+read -p "[+]Username: "  name
+
+case $name in 
    dave) echo "Welcome dave" ;;
    bob) echo "Welcome bob" ;;
    *) echo "not a recoginzed name" ;;

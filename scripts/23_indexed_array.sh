@@ -7,22 +7,22 @@ declare -a new_array
 
 array=(foo bar zoo)
 
-echo "Array1: ${array[0]}"
-echo "Array2: ${array[1]}"
-echo "Array3: ${array[2]}"
+echo "[+]Array1: ${array[0]}"
+echo "[+]Array2: ${array[1]}"
+echo "[+]Array3: ${array[2]}"
 
-echo "Array@: ${array[@]}"
-echo "Array*: ${array[*]}"
+echo "[+]Array@: ${array[@]}"
+echo "[+]Array*: ${array[*]}"
 
 echo -e "\n############################"
 for item in "${array[@]}"; do
-    echo "Item of Array@: $item"
+    echo "[+]Item of Array@: $item"
 done
 echo -e "\n############################"
 
 echo -e "\n############################"
 for item in "${array[*]}"; do
-   echo "Item of Array*: $item"
+   echo "[+]Item of Array*: $item"
 done
 
 echo -e "\n############################"
@@ -30,7 +30,7 @@ second_array+=(alice ben sea)
 
 echo -e "\n#############################"
 for item in "${second_array[@]}"; do
-   echo "Item of second_array: $item"
+   echo "[+]Item of second_array: $item"
 done
 echo -e "\n#############################"
 
@@ -40,7 +40,7 @@ echo -e "\n#############################"
 combined_array=("${array[@]}" "${second_array[@]}")
 
 for item in "${combined_array[@]}"; do
-   echo "Item of combined_array: $item"
+   echo "[+]Item of combined_array: $item"
 done
 echo -e "\n#############################"
 

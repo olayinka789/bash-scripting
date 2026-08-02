@@ -12,3 +12,10 @@ echo $2
 echo "Value of 3"
 echo $3
 
+echo "Number of arguments: $#"
+echo "All arguments: $@"
+echo "All arguments: $*"
+echo "PID of the script: $$"
+echo "Exit status of last command: $?"
+echo  "Echo name of the script: $0"
+

@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-echo "Input your name"
+echo "[+]Input your name"
 read  NAME
 
-read -p "Username: "  USR
-read -sp "Password: " PWD
+read -p "[+]Username: "  USR
+read -sp "[+]Password: " PWD
 
 echo
  
